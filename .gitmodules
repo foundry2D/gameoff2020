@@ -1,0 +1,3 @@
+[submodule "Libraries/foundsdk"]
+	path = Libraries/foundsdk
+	url = https://github.com/foundry2D/foundsdk.git
