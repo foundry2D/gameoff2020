@@ -1,5 +1,5 @@
 let project = new Project('Project');
-project.addAssets('Assets/**');
+project.addAssets('Assets/*');
 project.addAssets("Assets/Scripts/*", { notinlist: false, destination: "Scripts/{name}" });
 project.addSources('Sources');
 project.addShaders('Shaders/**');
@@ -7,8 +7,8 @@ project.addParameter("-debug");
 
 // Gameplay code should reside in the gameplay folder of the Sources folder at the root
 // Add these parameters to make sure your Traits aren't removed by dead code elimination 
-// project.addParameter('gameplay');
-// project.addParameter("--macro keep('gameplay')");
+project.addParameter('gameplay');
+project.addParameter("--macro keep('gameplay')");
 
 // project.addParameter("--times");
 // project.addDefine('macro-times');
